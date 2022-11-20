@@ -8,6 +8,3 @@ count down to cmp-23 graduation
   ![collapesd](./screens/1.png)
 
   <hr />
-  
-  ![collapesd](./screens/2.png)
-
