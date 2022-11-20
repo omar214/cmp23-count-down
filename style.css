@@ -1,0 +1,118 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	/* background: rgb(39, 49, 98); */
+	background: rgb(39, 49, 98);
+	background: radial-gradient(
+		circle,
+		rgba(39, 49, 98, 1) 19%,
+		rgba(10, 20, 70, 1) 52%
+	);
+}
+.container {
+	width: 40%;
+}
+.container h1 {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	position: relative;
+	letter-spacing: 3px;
+	padding-bottom: 2rem;
+}
+.container h1::after {
+	content: '5las fadel Takka 👨‍🎓🎈';
+	position: absolute;
+	font-size: 0.8rem;
+	top: -1.8rem;
+	right: 3rem;
+	background-color: red;
+	color: white;
+	padding: 5px;
+	padding-left: 8px;
+}
+.timers {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.timers .timer {
+	background-color: rgb(31, 22, 61);
+	width: 150px;
+	height: 150px;
+	padding: 0.5rem;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.timers .timer::before {
+	content: '';
+	background-color: rgb(251, 156, 3);
+	inset: 0px;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+	animation: animate 3s linear infinite none;
+	transition: 1s;
+}
+.timers .timer div {
+	position: relative;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: rgb(10, 6, 21);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.timers .timer div span {
+	font-size: 40px;
+	color: rgb(251, 156, 3);
+	padding: 10px;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+		inset: 15px;
+	}
+	50% {
+		transform: rotate(90deg);
+		inset: 5px;
+	}
+	100% {
+		transform: rotate(180deg);
+		inset: 0px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 100%;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.timers {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+}
