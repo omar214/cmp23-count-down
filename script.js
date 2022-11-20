@@ -1,6 +1,6 @@
 function countDown() {
 	let today = new Date();
-	let vDate = new Date("2023-7-1");
+	let vDate = new Date("2023-7-20");
 	const t = vDate.getTime() - today.getTime();
 
 	const day = Math.floor(t / (1000 * 60 * 60 * 24));
