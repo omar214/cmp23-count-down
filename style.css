@@ -18,9 +18,6 @@ body {
 		rgba(10, 20, 70, 1) 52%
 	);
 }
-.container {
-	width: 40%;
-}
 .container h1 {
 	text-align: center;
 	color: white;
