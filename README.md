@@ -7,6 +7,6 @@ A cout down to the graduation of CMP 23 🥳🎓️
 
 ## 🎥 Screenshots<a name = "screenshots"></a> 
 
-  ![collapesd](./screens/new.png)
+  ![collapesd](./screens/cmp23.png)
 
   <hr />
