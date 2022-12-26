@@ -1,11 +1,12 @@
-# cmp23-count-down
-count down to cmp-23 graduation  
+# CMP 23 COUNT DOWN
+
+A cout down to the graduation of CMP 23 🥳🎓️
 
 **<a href="https://omar214.github.io/cmp23-count-down/" target="_blank">Watch Live</a>**
 
 
-## 🎥 screenshots<a name = "screenshots"></a> 
+## 🎥 Screenshots<a name = "screenshots"></a> 
 
-  ![collapesd](./screens/1.png)
+  ![collapesd](./screens/cmp23.png)
 
   <hr />

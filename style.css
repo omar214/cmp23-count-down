@@ -10,7 +10,6 @@ body {
 	align-items: center;
 	width: 100%;
 	min-height: 100vh;
-	/* background: rgb(39, 49, 98); */
 	background: rgb(39, 49, 98);
 	background: radial-gradient(
 		circle,
@@ -22,7 +21,7 @@ body {
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	position: relative;
 	letter-spacing: 3px;
 	padding-bottom: 2rem;
@@ -30,10 +29,10 @@ body {
 .container h1::after {
 	content: '5las fadel Takka 👨‍🎓🎈';
 	position: absolute;
-	font-size: 0.8rem;
-	top: -1.8rem;
-	right: 3rem;
-	background-color: red;
+	font-size: 1rem;
+	top: -60%;
+	right: 5%;
+	background-color: #319de9;
 	color: white;
 	padding: 5px;
 	padding-left: 8px;
@@ -48,6 +47,7 @@ body {
 	width: 150px;
 	height: 150px;
 	padding: 0.5rem;
+	margin: 0.5rem;
 	border-radius: 50%;
 	position: relative;
 	overflow: hidden;
@@ -60,7 +60,7 @@ body {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 0;
-	animation: animate 3s linear infinite none;
+	animation: animate 3s linear alternate infinite none;
 	transition: 1s;
 }
 .timers .timer div {
