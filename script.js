@@ -21,3 +21,16 @@ function countDown() {
 }
 
 setInterval(countDown, 1000);
+
+const audio = new Audio('assets/taka.mp3');
+audio.loop = true;
+
+function toggle_taka() {
+	if (audio.paused) {
+		audio.play()
+		document.getElementById('taka_player').setAttribute('value', 'Pause');
+	} else {
+		audio.pause()
+		document.getElementById('taka_player').setAttribute('value', 'Play');
+	}
+}
