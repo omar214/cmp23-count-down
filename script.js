@@ -1,6 +1,6 @@
 function countDown() {
 	let today = new Date();
-	let vDate = new Date("2023-7-20");
+	let vDate = new Date("2023-7-21 10:00:00");
 	const t = vDate.getTime() - today.getTime();
 
 	const day = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -8,7 +8,6 @@ function countDown() {
 	const minute = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 	const sec = Math.floor((t % (1000 * 60)) / 1000);
 
-	// document.getElementById('year').innerText = today.getFullYear();
 	document.getElementById('day').innerText = day;
 	document.getElementById('hour').innerText = hour;
 	document.getElementById('min').innerText = minute;
@@ -28,9 +27,9 @@ audio.loop = true;
 function toggle_taka() {
 	if (audio.paused) {
 		audio.play()
-		document.getElementById('taka_player').setAttribute('value', 'Pause');
+		document.getElementById('taka_player').innerText = 'pause'
 	} else {
 		audio.pause()
-		document.getElementById('taka_player').setAttribute('value', 'Play');
+		document.getElementById('taka_player').innerText = 'play'
 	}
 }

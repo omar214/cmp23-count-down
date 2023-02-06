@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	font-family: sans-serif;
 }
+
 body {
 	display: flex;
 	justify-content: center;
@@ -11,12 +12,11 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	background: rgb(39, 49, 98);
-	background: radial-gradient(
-		circle,
-		rgba(39, 49, 98, 1) 19%,
-		rgba(10, 20, 70, 1) 52%
-	);
+	background: radial-gradient(circle,
+			rgba(39, 49, 98, 1) 19%,
+			rgba(10, 20, 70, 1) 52%);
 }
+
 .container h1 {
 	text-align: center;
 	color: white;
@@ -26,6 +26,7 @@ body {
 	letter-spacing: 3px;
 	padding-bottom: 2rem;
 }
+
 .container h1::after {
 	content: '5las fadel Takka 👨‍🎓🎈';
 	position: absolute;
@@ -37,11 +38,13 @@ body {
 	padding: 5px;
 	padding-left: 8px;
 }
+
 .timers {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
+
 .timers .timer {
 	background-color: rgb(31, 22, 61);
 	width: 150px;
@@ -53,6 +56,7 @@ body {
 	overflow: hidden;
 	z-index: 1;
 }
+
 .timers .timer::before {
 	content: '';
 	background-color: rgb(251, 156, 3);
@@ -63,6 +67,7 @@ body {
 	animation: animate 3s linear alternate infinite none;
 	transition: 1s;
 }
+
 .timers .timer div {
 	position: relative;
 	z-index: 100;
@@ -75,13 +80,35 @@ body {
 	background-color: rgb(10, 6, 21);
 	color: white;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+
 .timers .timer div span {
 	font-size: 40px;
 	color: rgb(251, 156, 3);
-	padding: 10px;
+	padding: 0 10px;
+}
+
+.player-button {
+	display: block;
+	min-width: 8rem;
+	margin: 2rem auto 0rem auto;
+	padding: 0.5rem 1rem;
+	background-color: #319de9;
+	color: white;
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.player-button:hover {
+	background-color: #59baff;
 }
 
 @keyframes animate {
@@ -89,10 +116,12 @@ body {
 		transform: rotate(0deg);
 		inset: 15px;
 	}
+
 	50% {
 		transform: rotate(90deg);
 		inset: 5px;
 	}
+
 	100% {
 		transform: rotate(180deg);
 		inset: 0px;
@@ -105,6 +134,7 @@ body {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
+
 	.timers {
 		display: flex;
 		flex-direction: column;
