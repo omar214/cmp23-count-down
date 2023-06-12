@@ -15,8 +15,11 @@ function countDown() {
 
 	if (t <= 0) {
 		clearTimeout(counter);
-		document.querySelector('timers').innerText = 'Expired';
+		document.getElementById('day').innerText = 0;
+		document.getElementById('hour').innerText = 0;
+		document.getElementById('min').innerText = 0;
+		document.getElementById('sec').innerText = 0;
 	}
 }
 
-setInterval(countDown, 1000);
+var counter = setInterval(countDown, 1000);
