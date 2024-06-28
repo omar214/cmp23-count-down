@@ -13,13 +13,13 @@ function countDown() {
 	document.getElementById('min').innerText = minute;
 	document.getElementById('sec').innerText = sec;
 
-	if (t <= 0) {
-		clearTimeout(counter);
-		document.getElementById('day').innerText = 0;
-		document.getElementById('hour').innerText = 0;
-		document.getElementById('min').innerText = 0;
-		document.getElementById('sec').innerText = 0;
-	}
+	// if (t <= 0) {
+	// 	clearTimeout(counter);
+	// 	document.getElementById('day').innerText = 0;
+	// 	document.getElementById('hour').innerText = 0;
+	// 	document.getElementById('min').innerText = 0;
+	// 	document.getElementById('sec').innerText = 0;
+	// }
 }
 
 var counter = setInterval(countDown, 1000);
